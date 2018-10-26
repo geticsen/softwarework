@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e7ea">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/msg_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:background="#d1cece">
+        <EditText
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:hint="请输入"
+            android:maxLines="2"
+            android:background="@drawable/edittext_shape"/>
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/shape"
+            android:layout_marginTop="18dp"
+            android:text="发送" />
+    </LinearLayout>
+</LinearLayout>
